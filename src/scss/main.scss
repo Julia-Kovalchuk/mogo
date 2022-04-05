@@ -1,0 +1,18 @@
+@import "reset";
+@import "utils";
+@import "variables";
+@import "mixin";
+@import "components";
+@import "fonts";
+@import "base";
+
+//Screens
+@import "./blocks/screens/banner";
+@import "./blocks/screens/header";
+@import "./blocks/screens/welcome";
+@import "./blocks/screens/about";
+@import "./blocks/screens/futures";
+@import "./blocks/screens/reviews";
+@import "./blocks/screens/map";
+@import "./blocks/screens/footer";
+@import "./blocks/screens/portfolio";

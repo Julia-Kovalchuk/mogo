@@ -1,0 +1,11 @@
+.banner {
+  margin-bottom: 42px;
+  background: url(../image/banner.png), url(../image/banner-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include tablet {
+    margin-bottom: 29px;
+  }
+}

@@ -1,0 +1,62 @@
+body {
+  font-family: $raleway-font-stack;
+  font-size: rem(18px);
+  line-height: rem(21px);
+  color: map-get($colors, "font-color");
+}
+
+a {
+  text-decoration: none;
+
+  &:focus {
+    border: none;
+    border: 1px solid #d1dbe0;
+    box-shadow: 2px #d1dbe0;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: $montserrat-font-stack;
+  font-weight: 700;
+  font-size: rem(144px);
+  line-height: rem(176px);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: $kaushan-font-stack;
+  font-size: rem(64px);
+  line-height: rem(93px);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: rem(30px);
+  line-height: rem(35px);
+}
+
+h4 {
+  font-weight: 900;
+  font-size: rem(24px);
+  line-height: rem(28px);
+}
+
+h6 {
+  font-weight: 700;
+  font-size: rem(13px);
+  line-height: rem(15px);
+}
+
+.container {
+  max-width: 1510px;
+  padding: 0 170px;
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 0 16px;
+  }
+}

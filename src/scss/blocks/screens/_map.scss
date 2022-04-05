@@ -1,0 +1,36 @@
+.map {
+  margin: auto;
+  background: url(../image/map-background-1.png),
+    url(../image/map-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 46px 0 42px;
+
+  @include tablet {
+    padding: 29px 0;
+  }
+
+  @include mobile {
+    padding: 42px 0;
+  }
+
+  &__icon {
+    max-width: 42px;
+
+    @include tablet {
+      max-width: 29px;
+    }
+
+    @include mobile {
+      max-width: 42px;
+    }
+  }
+
+  &__subtitle {
+    color: map-get($colors, "red");
+  }
+}
