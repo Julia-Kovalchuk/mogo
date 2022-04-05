@@ -1,0 +1,445 @@
+.footer {
+  max-width: 1510px;
+  margin: auto;
+  background-color: map-get($colors, "white");
+
+  &__row {
+    display: grid;
+    grid-template-columns: 33.333% 42.34% 24.32%;
+    column-gap: 30px;
+
+    @include tablet {
+      column-gap: 20px;
+    }
+
+    @include mobile {
+      grid-template-columns: none;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    padding: 17px 0;
+    border-top: 1px solid #c6cbcd;
+    font-weight: 700;
+    font-size: rem(13px);
+    line-height: rem(15px);
+    text-align: center;
+    text-transform: uppercase;
+    color: map-get($colors, "dark");
+
+    @include tablet {
+      padding: 15px 0;
+    }
+
+    @include mobile {
+      padding: 5px 0;
+    }
+  }
+}
+
+.info {
+  padding: 78px 0 42px 0;
+
+  @include tablet {
+    padding: 53px 0 52px 0;
+  }
+
+  @include mobile {
+    padding: 28px 0 0 0;
+    text-align: center;
+  }
+
+  &__logo {
+    margin-bottom: 26px;
+
+    @include tablet {
+      max-height: 25.72px;
+      margin-bottom: 18px;
+    }
+
+    @include mobile {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__img {
+    @include tablet {
+      max-height: 25.72px;
+    }
+
+    @include mobile {
+      object-position: center;
+    }
+  }
+
+  &__text {
+    color: map-get($colors, "gray");
+    padding: 17px 0;
+
+    @include tablet {
+      padding: 15px 0;
+      font-size: rem(14px);
+      line-height: rem(16px);
+    }
+
+    @include mobile {
+      padding: 6px 0;
+    }
+  }
+
+  &__followers {
+    font-weight: 700;
+    font-size: rem(36px);
+    line-height: rem(30px);
+    text-transform: uppercase;
+    color: map-get($colors, "dark");
+    padding: 22px 0;
+    border-bottom: 1px solid map-get($colors, "gray");
+
+    @include tablet {
+      font-size: rem(24px);
+      padding: 12px 0;
+    }
+
+    &--small-1 {
+      font-weight: 700;
+      font-size: rem(18px);
+      line-height: rem(30px);
+      color: map-get($colors, "dark");
+
+      @include tablet {
+        font-size: rem(14px);
+      }
+    }
+
+    &--small-2 {
+      font-weight: 400;
+      font-size: rem(18px);
+      line-height: rem(30px);
+      font-style: italic;
+      color: map-get($colors, "dark");
+
+      @include tablet {
+        font-size: rem(14px);
+      }
+    }
+  }
+
+  &__social-network {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 37px;
+    flex-wrap: wrap;
+
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__follow {
+    padding: 14px 0;
+    margin-right: auto;
+    font-style: italic;
+    font-size: rem(13px);
+    line-height: rem(15px);
+    color: map-get($colors, "gray");
+
+    @include tablet {
+      padding: 8px 0;
+      margin-right: 25px;
+      font-size: rem(12px);
+      line-height: rem(14px);
+    }
+  }
+
+  &__icons {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 5px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-inline-start: 0;
+
+    @include tablet {
+      grid-gap: 4px;
+    }
+
+    @include mobile {
+      grid-gap: 11px;
+    }
+  }
+
+  &__social-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    object-fit: none;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      border: none;
+      box-shadow: 0 0 2px #c8cfd3;
+    }
+
+    &:focus {
+      border: none;
+      border: 1px solid #d1dbe0;
+      box-shadow: 2px #d1dbe0;
+    }
+
+    &:active {
+      border: none;
+      box-shadow: 0 0 2px #84888a;
+    }
+  }
+}
+
+.form {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &__input {
+    width: 63%;
+    padding-left: 10%;
+    border: 1px solid #c6cbcd;
+    text-align: left;
+    color: map-get($colors, "gray");
+
+    @include tablet {
+      font-size: rem(14px);
+      line-height: rem(16px);
+    }
+
+    @include mobile {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    //не могу понять почему active, focus не применяются
+    &:hover {
+      border: 1px solid #dbe3e7;
+    }
+
+    &:focus {
+      border: none;
+      border: 1px solid #d1dbe0;
+      box-shadow: 2px #d1dbe0;
+    }
+
+    &:active {
+      border: 1px solid #dbe3e7;
+    }
+  }
+
+  &__button {
+    width: 36%;
+    padding: 17px 5px;
+    border: 1px solid map-get($colors, "green");
+    background: map-get($colors, "green");
+    font-weight: 700;
+    font-size: rem(18px);
+    line-height: rem(21px);
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    &:hover {
+      cursor: pointer;
+      background: #87d2c4;
+      transition: all 0.3s;
+    }
+
+    &:focus {
+      border: none;
+      border: 1px solid #d1dbe0;
+      box-shadow: 2px #d1dbe0;
+    }
+
+    &:active {
+      background: #5c958a;
+      transition: all 0.4s;
+    }
+
+    @include tablet {
+      padding: 12px 3px;
+      font-size: rem(14px);
+      line-height: rem(16px);
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.blogs {
+  padding: 42px 0 22px;
+
+  @include tablet {
+    padding: 28px 0 52px;
+  }
+
+  @include mobile {
+    padding: 0 0 0 0;
+  }
+
+  &__title {
+    padding: 36px 0;
+    text-transform: uppercase;
+    color: map-get($colors, "dark");
+
+    @include tablet {
+      padding: 24px 0;
+      font-size: rem(18px);
+      line-height: rem(21px);
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 36% 64%;
+    grid-gap: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @include tablet {
+      margin-bottom: 14px;
+    }
+
+    @include mobile {
+      grid-gap: 14px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__header {
+    max-width: 100%;
+    padding: 4px 1px 4px 0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: rem(18px);
+    line-height: rem(21px);
+    text-transform: uppercase;
+    color: map-get($colors, "dark");
+
+    @include tablet {
+      padding: 7px 0;
+      font-size: rem(14px);
+      line-height: rem(16px);
+    }
+
+    @include mobile {
+      padding: 0 0;
+    }
+  }
+
+  &__date {
+    padding: 11px 0;
+    font-size: rem(13px);
+    line-height: rem(15px);
+    color: map-get($colors, "dark");
+
+    @include tablet {
+      padding: 5px 0;
+      font-size: rem(12px);
+      line-height: rem(14px);
+    }
+  }
+}
+
+.instagram {
+  padding: 42px 0 22px;
+
+  @include tablet {
+    padding: 28px 0 23px;
+  }
+
+  @include mobile {
+    padding: 0;
+  }
+
+  &__title {
+    padding: 36px 0;
+    text-transform: uppercase;
+    color: map-get($colors, "dark");
+
+    @include tablet {
+      padding: 24px 0;
+      font-size: rem(18px);
+      line-height: rem(21px);
+    }
+
+    @include mobile {
+      padding: 31 px 0;
+      text-align: center;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2px;
+  }
+
+  &__link {
+    padding: 39px 0;
+    font-size: rem(13px);
+    line-height: rem(15px);
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: map-get($colors, "dark");
+
+    @include tablet {
+      padding: 14px 0;
+      font-size: rem(12px);
+      line-height: rem(14px);
+    }
+
+    @include mobile {
+      padding: 32px 0;
+      text-align: center;
+    }
+  }
+}

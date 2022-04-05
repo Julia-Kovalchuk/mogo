@@ -1,0 +1,28 @@
+$base-font-size: 16px;
+
+$kaushan-font-stack: "Kaushan Script", Arial, sans-serif;
+$raleway-font-stack: "Raleway", Arial, sans-serif;
+$montserrat-font-stack: "Montserrat", Arial, sans-serif;
+
+$width-divider-title: 170px;
+
+$colors: (
+  "font-color": #000000,
+  "red": #f38281,
+  "yellow": #f9efcf,
+  "orange": #f4bf87,
+  "green": #95e1d3,
+  "dark": #2d3033,
+  "LightGray": #f5f5f5,
+  "white": #f8f8f8,
+  "gray": #c6cbcd,
+);
+
+$breakpoints: (
+  mobile: rem(768px),
+  tablet: rem(1024px),
+);
+
+:root {
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+}

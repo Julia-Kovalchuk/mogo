@@ -1,0 +1,43 @@
+@use "sass:math";
+
+.title {
+  text-align: center;
+  padding: 18px 0;
+
+  font-weight: 400;
+  font-size: rem(30px);
+  line-height: rem(44px);
+  color: map-get($colors, "dark");
+
+  @include tablet {
+    padding: 16px 0;
+    font-size: rem(24px);
+    line-height: rem(35px);
+  }
+}
+
+.subtitle {
+  text-align: center;
+  padding: 19px 0 0 0;
+
+  font-weight: 900;
+  font-size: rem(36px);
+  line-height: rem(42px);
+  text-transform: uppercase;
+  color: map-get($colors, "dark");
+
+  @include tablet {
+    padding: 14px 0 0 0;
+    font-size: rem(24px);
+    line-height: rem(28px);
+  }
+
+  @include mobile {
+    padding: 20px 0 0 0;
+  }
+
+  &::after {
+    @include divider-title;
+    background-color: map-get($colors, "red");
+  }
+}

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="./image/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./scss/main.scss" class="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--                                                                     banner-->
+
+    <section class="banner">
+      <div class="container">
+        <header class="header">
+          <a href="#"
+            ><img class="header__logo" src="./image/logo.svg" alt="logo"
+          /></a>
+
+          <div class="header__menu-burger">
+            <span></span>
+          </div>
+          <div class="header__nav nav">
+            <nav class="nav__menu">
+              <li><a href="#about" class="nav__item"> About</a></li>
+              <li><a href="#service" class="nav__item">service</a></li>
+              <li><a href="#work" class="nav__item">work</a></li>
+              <li><a href="#blog" class="nav__item">blog</a></li>
+              <li><a href="#contact" class="nav__item">Contact</a></li>
+              <li class="nav__item nav__icon">
+                <a href="#"><img src="./image/basket.svg" alt="basket" /></a>
+              </li>
+              <li class="nav__item nav__icon">
+                <a href="#"><img src="./image/search.svg" alt="search" /></a>
+              </li>
+            </nav>
+          </div>
+        </header>
+        <div class="welcome">
+          <h2 class="welcome__title">Creative Template</h2>
+          <h1 class="welcome__subtitle">
+            Welcome <br />
+            to MoGo
+          </h1>
+          <button class="welcome__btn">learn more</button>
+          <div class="welcome__row">
+            <div class="welcome__item">
+              <a href="#">
+                <div class="welcome__unit">
+                  01 <span class="welcome__unit-small">intro</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="welcome__item">
+              <a href="#">
+                <div class="welcome__unit">
+                  02 <span class="welcome__unit-small">worck</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="welcome__item">
+              <a href="#">
+                <div class="welcome__unit">
+                  03 <span class="welcome__unit-small">about</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="welcome__item">
+              <a href="#">
+                <div class="welcome__unit">
+                  04 <span class="welcome__unit-small">contacts</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!--                                                                      about-->
+      <a name="about"></a>
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title title">What we do</h2>
+          <p class="about__subtitle subtitle">story about us</p>
+          <!--так как не совпадает ни с одним h по размерам/стилям-->
+          <p class="about__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu
+            facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis
+            sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue
+            sit fermentum risus feugiat.
+          </p>
+          <div class="about__row">
+            <div class="about__cards">
+              <div class="about_card card">
+                <img
+                  class="card__image"
+                  src="./image/about_img1.png"
+                  alt="image"
+                />
+                <a href="#" target="_blank">
+                  <div class="card__overlay">
+                    <img
+                      class="card__icon"
+                      src="./image/about-icon.png"
+                      alt="icon"
+                    />
+                    <div class="card__title">Super team</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="about_card card">
+                <img
+                  class="card__image"
+                  src="./image/about_img2.png"
+                  alt="image"
+                />
+                <a href="#" target="_blank">
+                  <div class="card__overlay">
+                    <img
+                      class="card__icon"
+                      src="./image/about-icon.png"
+                      alt="icon"
+                    />
+                    <div class="card__title">Super team</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="about_card card">
+                <img
+                  class="card__image"
+                  src="./image/about_img3.png"
+                  alt="image"
+                />
+                <a href="#" target="_blank">
+                  <div class="card__overlay">
+                    <img
+                      class="card__icon"
+                      src="./image/about-icon.png"
+                      alt="icon"
+                    />
+                    <div class="card__title">Super team</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--                                                                      row-->
+      <section class="futures">
+        <div class="container">
+          <div class="row-info">
+            <div class="row-info__item">
+              42 <br /><span class="row-info__item--small">Lorem ipsum</span>
+            </div>
+            <div class="row-info__item">
+              123 <br /><span class="row-info__item--small">Lorem ipsum</span>
+            </div>
+            <div class="row-info__item">
+              15 <br /><span class="row-info__item--small">Lorem ipsum</span>
+            </div>
+            <div class="row-info__item">
+              99 <br /><span class="row-info__item--small">Lorem ipsum</span>
+            </div>
+            <div class="row-info__item">
+              24 <br /><span class="row-info__item--small">Lorem ipsum</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--                                                                      portfolio-->
+      <a name="work"></a>
+      <section class="portfolio">
+        <h2 class="portfolio__title title">What we do</h2>
+        <h3 class="portfolio__subtitle subtitle">some of our work</h3>
+        <p class="portfolio__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis
+          sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien
+          ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit
+          fermentum risus feugiat.
+        </p>
+        <div class="portfolio__container">
+          <div class="portfolio__case case case-1">
+            <img
+              class="case__image"
+              src="./image/portfolio-case-1.png"
+              alt="case"
+            />
+            <a href="#" target="_blank">
+              <div class="case__overlay">
+                <img
+                  class="case__icon"
+                  src="./image/cup-icon.svg"
+                  alt="cup-icon"
+                />
+                <h4 class="case__title">creatively design</h4>
+                <div class="case__description">Lorem ipsum dolor sit</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio__case case case-2">
+            <img
+              class="case__image"
+              src="./image/portfolio-case-2.png"
+              alt="case"
+            />
+            <a href="#" target="_blank">
+              <div class="case__overlay">
+                <img
+                  class="case__icon"
+                  src="./image/cup-icon.svg"
+                  alt="cup-icon"
+                />
+                <h4 class="case__title">creatively design</h4>
+                <div class="case__description">Lorem ipsum dolor sit</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio__case case case-3">
+            <img
+              class="case__image"
+              src="./image/portfolio-case-3.png"
+              alt="case"
+            />
+            <a href="#" target="_blank">
+              <div class="case__overlay">
+                <img
+                  class="case__icon"
+                  src="./image/cup-icon.svg"
+                  alt="cup-icon"
+                />
+                <h4 class="case__title">creatively design</h4>
+                <div class="case__description">Lorem ipsum dolor sit</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio__case case case-4">
+            <img
+              class="case__image"
+              src="./image/portfolio-case-4.png"
+              alt="case"
+            />
+            <a href="#" target="_blank">
+              <div class="case__overlay">
+                <img
+                  class="case__icon"
+                  src="./image/cup-icon.svg"
+                  alt="cup-icon"
+                />
+                <h4 class="case__title">creatively design</h4>
+                <div class="case__description">Lorem ipsum dolor sit</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio__case case case-5">
+            <img
+              class="case__image"
+              src="./image/portfolio-case-5.png"
+              alt="case"
+            />
+            <a href="#" target="_blank">
+              <div class="case__overlay">
+                <img
+                  class="case__icon"
+                  src="./image/cup-icon.svg"
+                  alt="cup-icon"
+                />
+                <h4 class="case__title">creatively design</h4>
+                <div class="case__description">Lorem ipsum dolor sit</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio__case case case-6">
+            <img
+              class="case__image"
+              src="./image/portfolio-case-6.png"
+              alt="case"
+            />
+            <a href="#" target="_blank">
+              <div class="case__overlay">
+                <img
+                  class="case__icon"
+                  src="./image/cup-icon.svg"
+                  alt="cup-icon"
+                />
+                <h4 class="case__title">creatively design</h4>
+                <div class="case__description">Lorem ipsum dolor sit</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio__case case case-7">
+            <img
+              class="case__image"
+              src="./image/portfolio-case-7.png"
+              alt="case"
+            />
+            <a href="#" target="_blank">
+              <div class="case__overlay">
+                <img
+                  class="case__icon"
+                  src="./image/cup-icon.svg"
+                  alt="cup-icon"
+                />
+                <h4 class="case__title">creatively design</h4>
+                <div class="case__description">Lorem ipsum dolor sit</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--                                                                                                Swiper 2.0-->
+      <section class="testimonials">
+        <div class="wrapper">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews">
+                  <div class="reviews__image">
+                    <img src="./image/swiper.png" alt="James Philips" />
+                  </div>
+                  <div class="reviews__content">
+                    <p class="reviews__review">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+                      vehicula feugiat arcu arcu nulla ornare. Sed amet
+                      venenatis, massa sit.
+                    </p>
+                    <p class="reviews__signature">James Philips</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews">
+                  <div class="reviews__image">
+                    <img src="./image/swiper.png" alt="James Philips" />
+                  </div>
+                  <div class="reviews__content">
+                    <p class="reviews__review">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+                      vehicula feugiat arcu arcu nulla ornare. Sed amet
+                      venenatis, massa sit.
+                    </p>
+                    <p class="reviews__signature">James Philips</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews">
+                  <div class="reviews__image">
+                    <img src="./image/swiper.png" alt="James Philips" />
+                  </div>
+                  <div class="reviews__content">
+                    <p class="reviews__review">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+                      vehicula feugiat arcu arcu nulla ornare. Sed amet
+                      venenatis, massa sit.
+                    </p>
+                    <p class="reviews__signature">James Philips</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews">
+                  <div class="reviews__image">
+                    <img src="./image/swiper.png" alt="James Philips" />
+                  </div>
+                  <div class="reviews__content">
+                    <p class="reviews__review">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+                      vehicula feugiat arcu arcu nulla ornare. Sed amet
+                      venenatis, massa sit.
+                    </p>
+                    <p class="reviews__signature">James Philips</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev">
+              <img src="./image/arrow-left.svg" alt="back" />
+            </div>
+            <div class="swiper-button-next">
+              <img src="./image/arrow-rigth.svg" alt="next" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <section class="map">
+        <img class="map__icon" src="./image/map-icon.svg" alt="map" />
+        <div class="map__subtitle subtitle">Latest blog</div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__info info">
+            <div class="info__logo">
+              <img class="info__img" src="./image/footer-MoGo.svg" alt="logo" />
+            </div>
+            <p class="info__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque quis proin varius vitae leo eget tincidunt duis amet.
+              Et amet dis vel imperdiet volutpat mauris est leo cursus.
+            </p>
+            <p class="info__followers">
+              15<span class="info__followers--small-1">k</span>
+              <span class="info__followers--small-2">followers</span>
+            </p>
+            <div class="info__social-network">
+              <p class="info__follow">Follow Us</p>
+              <ul class="info__icons">
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      class="info__social-icon"
+                      src="./image/icon-fb.png"
+                      alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      class="info__social-icon"
+                      class="info__icon"
+                      src="./image/icon-tw.png"
+                      alt="twitter"
+                  /></a>
+                </li>
+
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      class="info__social-icon"
+                      class="info__icon"
+                      src="./image/icon-inst.png"
+                      alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      class="info__social-icon"
+                      class="info__icon"
+                      src="./image/icon-pin.png"
+                      alt="pinterest"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      class="info__social-icon"
+                      class="info__icon"
+                      src="./image/icon-ln.png"
+                      alt="linkedin"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      class="info__social-icon"
+                      class="info__icon"
+                      src="./image/icon-yout.png"
+                      alt="youtube"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      class="info__social-icon"
+                      class="info__icon"
+                      src="./image/icon-dr.png"
+                      alt="dribble"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      class="info__social-icon"
+                      class="info__icon"
+                      src="./image/icon-tik.png"
+                      alt="tiktok"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <form class="info__form form">
+              <input
+                type="email"
+                class="form__input"
+                placeholder="Your Email"
+              />
+              <button class="form__button">subscribe</button>
+            </form>
+          </div>
+
+          <div class="footer__blogs blogs">
+            <h4 class="blogs__title">blogs</h4>
+            <div class="blogs__row">
+              <img
+                class="blogs__image"
+                src="./image/blogs-img-1.png"
+                alt="image"
+              />
+
+              <div class="blogs__description">
+                <p>
+                  <a href="#" class="blogs__header" target="_blank">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </a>
+                </p>
+                <p class="blogs__date">jan.9.22.15</p>
+              </div>
+            </div>
+            <div class="blogs__row">
+              <img
+                class="blogs__image"
+                src="./image/blogs-img-2.png"
+                alt="image"
+              />
+              <div class="blogs__description">
+                <p>
+                  <a href="#" class="blogs__header">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </a>
+                </p>
+                <p class="blogs__date">jan.9.22.15</p>
+              </div>
+            </div>
+            <div class="blogs__row">
+              <img
+                class="blogs__image"
+                src="./image/blogs-img-3.png"
+                alt="image"
+              />
+
+              <div class="blogs__description">
+                <p>
+                  <a href="#" class="blogs__header">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </a>
+                </p>
+                <p class="blogs__date">jan.9.22.15</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__instagram instagram">
+            <h4 class="instagram__title">instagram</h4>
+            <div class="instagram__grid">
+              <a href="#">
+                <img
+                  class="instagram__photo"
+                  src="./image/instagram-photo-1.png"
+                  alt="photo"
+              /></a>
+              <a href="#"
+                ><img
+                  class="instagram__photo"
+                  src="./image/instagram-photo-2.png"
+                  alt="photo"
+              /></a>
+              <a href="#">
+                <img
+                  class="instagram__photo"
+                  src="./image/instagram-photo-3.png"
+                  alt="photo"
+              /></a>
+              <a href="#">
+                <img
+                  class="instagram__photo"
+                  src="./image/instagram-photo-4.png"
+                  alt="photo"
+              /></a>
+              <a href="#">
+                <img
+                  class="instagram__photo"
+                  src="./image/instagram-photo-5.png"
+                  alt="photo"
+              /></a>
+              <a href="#">
+                <img
+                  class="instagram__photo"
+                  src="./image/instagram-photo-6.png"
+                  alt="photo"
+              /></a>
+              <a href="#">
+                <img
+                  class="instagram__photo"
+                  src="./image/instagram-photo-7.png"
+                  alt="photo"
+              /></a>
+              <a href="#">
+                <img
+                  class="instagram__photo"
+                  src="./image/instagram-photo-8.png"
+                  alt="photo"
+              /></a>
+              <a href="#">
+                <img
+                  class="instagram__photo"
+                  src="./image/instagram-photo-9.png"
+                  alt="photo"
+              /></a>
+            </div>
+            <div class="instagram__link"><a href="#">see all photos</a></div>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          Copyright © 2021 mogo. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <!--                                                                      scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script type="module">
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/9d16195bea.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

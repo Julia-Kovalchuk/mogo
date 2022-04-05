@@ -1,0 +1,164 @@
+.testimonials {
+  margin-bottom: 29px;
+}
+
+.wrapper {
+  padding: 0 195px;
+  margin: 0 auto;
+  margin-bottom: 84px;
+  overflow: visible;
+
+  @include tablet {
+    padding: 0 41px;
+    margin-bottom: 58px;
+  }
+
+  @include mobile {
+    padding: 0 0;
+    margin-bottom: 29px;
+  }
+}
+
+.swiper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.swiper-slide {
+  padding: 42px 38px;
+
+  @include tablet {
+    padding: 28px 64px;
+  }
+
+  @include mobile {
+    padding: 29px 16px;
+  }
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__image {
+    min-width: 170px;
+    margin-right: 30px;
+    margin-left: 58px;
+
+    @include tablet {
+      min-width: 115px;
+      margin-right: 38px;
+      margin-left: 64px;
+    }
+
+    @include mobile {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 42px;
+    }
+  }
+
+  &__review {
+    font-style: italic;
+    font-weight: 500;
+    font-size: rem(24px);
+    line-height: rem(28px);
+    color: map-get($colors, "gray");
+    margin-bottom: 21px;
+    margin-right: 58px;
+
+    @include tablet {
+      font-size: rem(18px);
+      line-height: rem(21px);
+      margin-bottom: 14pxx;
+      margin-right: 48px;
+    }
+
+    @include mobile {
+      margin-right: 0; //по макету шрифт меньше, чем на планшете, но выглядит очень мелко. Если оставлять размер шрифта планшета - выглядит более похоже
+      margin-bottom: 14px;
+    }
+  }
+
+  &__signature {
+    font-family: "Kaushan Script", arial, sans-serif;
+    font-size: rem(30px);
+    line-height: rem(44px);
+    color: map-get($colors, "font-color");
+    margin-left: 126px;
+
+    @include tablet {
+      font-size: rem(24px);
+      line-height: rem(35px);
+      margin-left: 85px;
+    }
+
+    &::before {
+      content: "";
+      height: 4px;
+      background-color: map-get($colors, "red");
+      max-width: 70px;
+
+      display: flex;
+      position: relative;
+      right: 126px;
+      top: 18px;
+
+      @include tablet {
+        max-width: 47px;
+        right: 85px;
+        top: 18px;
+      }
+
+      @include mobile {
+        max-width: 57px;
+      }
+    }
+  }
+}
+
+.swiper-button-prev {
+  @include mobile {
+    display: none;
+  }
+}
+
+.swiper-button-next {
+  @include mobile {
+    display: none;
+  }
+}
+
+.testimonials {
+  position: relative;
+}
+
+.swiper-pagination {
+  display: none;
+
+  @include mobile {
+    display: block;
+    position: sticky;
+    margin-bottom: 29px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 9.5px;
+  height: 9.5px;
+  border: 1px solid map-get($colors, "gray");
+  background: transparent;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: map-get($colors, "gray");
+}
